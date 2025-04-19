@@ -1,0 +1,210 @@
+/* 主应用样式 */
+QMainWindow {
+    background-color: #f5f5f7;
+}
+
+/* 标签页样式 */
+QTabWidget::pane {
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+QTabBar::tab {
+    background-color: #e0e0e0;
+    border: 1px solid #c0c0c0;
+    border-bottom: none;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 8px 12px;
+    margin-right: 2px;
+    color: #505050;
+}
+
+QTabBar::tab:selected {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    color: #1a73e8;
+    font-weight: bold;
+}
+
+QTabBar::tab:hover:not(:selected) {
+    background-color: #e8e8e8;
+}
+
+/* 标签样式 */
+QLabel {
+    color: #333333;
+    font-size: 13px;
+}
+
+/* 按钮样式 */
+QPushButton {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-weight: bold;
+    min-width: 100px;
+}
+
+QPushButton:hover {
+    background-color: #1669d6;
+}
+
+QPushButton:pressed {
+    background-color: #155bc2;
+}
+
+QPushButton:disabled {
+    background-color: #9eb5d6;
+    color: #e8e8e8;
+}
+
+/* 输入控件样式 */
+QComboBox, QSpinBox, QLineEdit {
+    border: 1px solid #c0c0c0;
+    border-radius: 4px;
+    padding: 6px;
+    background-color: white;
+    min-height: 24px;
+}
+
+QComboBox:hover, QSpinBox:hover, QLineEdit:hover {
+    border-color: #1a73e8;
+}
+
+QComboBox::drop-down {
+    border-left: 1px solid #c0c0c0;
+    width: 20px;
+}
+
+QComboBox::down-arrow {
+    width: 12px;
+    height: 12px;
+}
+
+/* 滑块样式 */
+QSlider::groove:horizontal {
+    border: 1px solid #c0c0c0;
+    height: 8px;
+    background: #f0f0f0;
+    margin: 2px 0;
+    border-radius: 4px;
+}
+
+QSlider::handle:horizontal {
+    background: #1a73e8;
+    border: 1px solid #1a73e8;
+    width: 16px;
+    margin: -4px 0;
+    border-radius: 8px;
+}
+
+QSlider::handle:horizontal:hover {
+    background: #1669d6;
+}
+
+/* 文本编辑框样式 */
+QTextEdit {
+    border: 1px solid #c0c0c0;
+    border-radius: 4px;
+    padding: 4px;
+    background-color: #ffffff;
+    font-family: Consolas, Monaco, "Courier New", monospace;
+    font-size: 12px;
+}
+
+QTextEdit:focus {
+    border-color: #1a73e8;
+}
+
+/* 分隔线样式 */
+QFrame.separator {
+    background-color: #e0e0e0;
+    max-height: 1px;
+    max-width: 1px;
+}
+
+/* 视频容器样式 */
+QFrame#videoContainer {
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #333333;
+}
+
+/* 视频标签样式 */
+QLabel#videoLabel {
+    background-color: transparent;
+    color: #cccccc;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* 分组框架样式 */
+QFrame.groupFrame {
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    background-color: #fafafa;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+/* 分组标题样式 */
+QLabel.groupTitle {
+    font-weight: bold;
+    color: #1a73e8;
+    font-size: 14px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 4px;
+    margin-bottom: 8px;
+}
+
+/* 功能按钮样式 */
+QPushButton#btnStartCamera {
+    background-color: #4CAF50;
+}
+
+QPushButton#btnStopCamera {
+    background-color: #f44336;
+}
+
+QPushButton#btnStartRecord {
+    background-color: #ff9800;
+}
+
+QPushButton#btnStopRecord {
+    background-color: #795548;
+}
+
+QPushButton#btnLoadVideo {
+    background-color: #673AB7;
+}
+
+QPushButton#btnToggleDetect {
+    background-color: #2196F3;
+}
+
+QPushButton#btnConvertFormat {
+    background-color: #009688;
+}
+
+/* 日志查看器样式 */
+QTextEdit#logViewer {
+    background-color: #f8f9fa;
+    color: #333333;
+    border: 1px solid #dfe1e5;
+    padding: 10px;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 13px;
+}
+
+QPushButton#btnToggleDetect[state="active"] {
+    background-color: #f44336;
+}
+
+QPushButton#btnToggleDetect[state="normal"] {
+    background-color: #2196F3;
+}
